@@ -1,0 +1,60 @@
+        /* Define animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply animation to Jumbotron content */
+        .jumbotron-content {
+            animation: fadeInUp 1s ease-out;
+            font-family: 'Quicksand', sans-serif;
+            height: 40rem;
+            display: flex;
+            text-align: justify;
+        }
+        .jumbotron-content-img {
+            animation: fadeInRight 1s ease-out;
+        }
+        
+
+        .jumbotron {
+            background-color: rgb(1, 19, 111);
+            
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fade-in-right {
+            animation: fadeInRight 1s ease-out;
+        }
+
+        .container-lightHeader{
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            margin-top: 2.5rem;   
+            animation: fadeInUp;
+            font-weight: 800;
+        }
+        .container-desc{
+            font-family: 'Quicksand', sans-serif;
+            font-size: small;
+            text-align: start;
+            margin-top: 20px;
+            text-align: center;
+        }
+
