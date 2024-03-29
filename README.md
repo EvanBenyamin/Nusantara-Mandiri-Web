@@ -1,6 +1,11 @@
 # Nusantara-Mandiri-Web
  Tugas Akhir Evan Benyamin, CRM Based Web
 
+
+# Tech stack 
+1. **FE**: HTML, CSS, JS + blade template engine
+2. **BE**: Laravel 9 
+
 # Goals Next 2 Sprints: 
 1. Layout structure HTML : 
 2. CSS animation and styles: 
