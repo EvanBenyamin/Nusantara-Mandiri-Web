@@ -1,13 +1,17 @@
   
+  
+        .custom-bg-color {
+            background-color: #007447; /* Dark green color */
+        }  
         .jumbotron {
-            background-image: url(/LandingPage/images/abstract-bg.png); 
+            background-color: #007447;
             
         }
         .jumbotron-content {
             animation: fadeInUp 1s ease-out;
             font-family: 'Quicksand', sans-serif;
-            background-color: transparent;
             display: flex;
+            
             text-align: justify;
             height: 35rem;
         }
@@ -28,15 +32,10 @@
         .fade-in-right {
             animation: fadeInRight 1s ease-out;
         }
-
-        .container{
-            
-        }
-
         .container-lightHeader{
             background-color: rgb(255, 255, 255);
             text-align: center;
-            margin-top: 2.5rem;   
+            margin-top: 1.5rem;   
             animation: fadeInUp;
             font-weight: 800;
         }
@@ -46,6 +45,13 @@
             text-align: start;
             margin-top: 20px;
             text-align: center;
+        }
+        .container{
+            margin-top: 1rem;
+        }
+        .container p{
+            font-family: 'Quicksand', sans-serif;
+            
         }
 
       /* Define animation */
@@ -68,4 +74,15 @@
             opacity: 1;
             transform: translateX(0);
         }
+    }
+    @keyframes SlideInFromRight{
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    .carousel-next{
+        animation: SlideInFromRight 1s ease-in-out
     }
