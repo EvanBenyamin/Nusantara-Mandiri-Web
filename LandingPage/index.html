@@ -9,10 +9,10 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link rel="icon" href=
-        "images/Koperasi-Logo.png"
+        "/LandingPage/images/bg-koperasi.png"
         type="image/x-icon" class="rounded-circle">
 
-        <!-- Bootstrap CSS v5.2.1 -->
+        <!-- Bootstrap CSS v5.3.3 -->
         <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
         <!-- Google Font  -->
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
        <!-- My CSS -->
-        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="./css/styles.css">
         <!-- Font Awesome 5.15.4 -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
@@ -30,7 +30,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="/images/bg-koperasi.png" alt="" width="50" height="36"class="d-inline-block align-text-top rounded-circle" 
+                        <img src="./images/bg-koperasi.png" alt="" width="50" height="36"class="d-inline-block align-text-top rounded-circle" 
                          border> Nusantara Mandiri
                     </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,12 +68,12 @@
                                 <p>Dalam kurun waktu sepuluh tahun, Koperasi kami telah mendedikasikan diri untuk memberikan layanan terbaik kepada lebih dari 200 nasabah dengan penuh integritas dan dedikasi yang tinggi. 
                                 Sebagai mitra keuangan yang andal, kami tidak hanya menyediakan layanan finansial yang komprehensif, tetapi juga menjaga kepentingan dan kesejahteraan anggota sebagai prioritas utama. Melalui 
                                 pendekatan yang proaktif dan berorientasi pada kebutuhan anggota, kami telah berhasil membangun hubungan yang kuat dan saling menguntungkan dalam memajukan kesejahteraan finansial mereka.</p>
-                                <a class="btn btn-primary btn-lg mt-1" href="#" role="button">Learn more</a>
+                                <button id="popoverButton" type="button" class="btn btn-outline-light " data-bs-toggle="popover" title="ESM in Browser" data-bs-content="ESM Test">Pelajari Lebih Lanjut </button>
                             </div>
                         </div>
                 <div class="jumbotron-content-img col-lg-5 d-none d-md-block mt-5">
                     <!-- Koperasi Nusantara Mandiri logo -->
-                    <img src="/images/bg-koperasi.png" class="img-fluid" alt="Large Image">
+                    <img src="./images/bg-koperasi.png" class="img-fluid" alt="Large Image">
                 </div>
                 <div class="container-light">
             </div>
@@ -81,7 +81,7 @@
     </div>
 </div>
         <div class ="container-lightHeader">
-            <h1>Layanan Kami</h1>
+            <h1>Mengapa Pilih Nusantara Mandiri?</h1>
             <div class="container text-center">
                 <div class="row">
                   <div class="col">
@@ -97,7 +97,7 @@
                   
                 </div>
                 <div class="row container-desc">
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 mt-3">
                     <p>Telah melayani dan dipercaya lebih dari 200 anggota nasabah</p>
                   </div>
                     
@@ -109,9 +109,16 @@
             <!-- place footer here -->
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-     
+        <script async src="https://ga.jspm.io/npm:es-module-shims@1.5.5/dist/es-module-shims.js"></script>
+    </script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+          "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+        }
+      }
+    </script>
+    <script type="module" src="./js/scripts.js"></script>
     </body>
 </html>

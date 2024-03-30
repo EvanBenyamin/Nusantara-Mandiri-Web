@@ -1,22 +1,11 @@
-        /* Define animation */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Apply animation to Jumbotron content */
+  
         .jumbotron-content {
             animation: fadeInUp 1s ease-out;
             font-family: 'Quicksand', sans-serif;
-            height: 40rem;
+            height: 38rem;
             display: flex;
             text-align: justify;
+           
         }
         .jumbotron-content-img {
             animation: fadeInRight 1s ease-out;
@@ -24,23 +13,16 @@
         
 
         .jumbotron {
-            background-color: rgb(1, 19, 111);
+            background-image: url(/LandingPage/images/abstract-bg.png);
             
-        }
-
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(100%);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
         }
 
         .fade-in-right {
             animation: fadeInRight 1s ease-out;
+        }
+
+        .container{
+            
         }
 
         .container-lightHeader{
@@ -50,11 +32,32 @@
             animation: fadeInUp;
             font-weight: 800;
         }
-        .container-desc{
+        .container-lightdesc{
             font-family: 'Quicksand', sans-serif;
-            font-size: small;
+            font-size: medium;
             text-align: start;
             margin-top: 20px;
             text-align: center;
         }
 
+      /* Define animation */
+      @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
