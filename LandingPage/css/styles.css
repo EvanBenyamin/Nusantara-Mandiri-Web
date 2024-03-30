@@ -1,21 +1,29 @@
   
+        .jumbotron {
+            background-image: url(/LandingPage/images/abstract-bg.png); 
+            
+        }
         .jumbotron-content {
             animation: fadeInUp 1s ease-out;
             font-family: 'Quicksand', sans-serif;
-            height: 38rem;
+            background-color: transparent;
             display: flex;
             text-align: justify;
-           
+            height: 35rem;
+        }
+        .jumbotron p{
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            background-color: transparent;
+            height: auto;
+        }
+        .jumbotron hr{
+            background-color: transparent;
         }
         .jumbotron-content-img {
             animation: fadeInRight 1s ease-out;
         }
-        
-
-        .jumbotron {
-            background-image: url(/LandingPage/images/abstract-bg.png);
-            
-        }
+    
 
         .fade-in-right {
             animation: fadeInRight 1s ease-out;
