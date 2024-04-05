@@ -6,7 +6,7 @@
         <meta charset="utf-8" />
         <meta
             name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            content="width=device-width, initial-scale=1, shrink-to-fit=yes"
         />
         <link rel="icon" href=
         "./images/bg-koperasi.png"
@@ -56,9 +56,9 @@
                         </ul>
                       </li>
         </header>
-        <main class="bg-light">
+        <main class=>
         <section id="jumbotron" aria-label="Jumbotron">
-          <div class="carousel mt-4" data-carousel>
+          <div class="carousel mt-4 bg-light" data-carousel>
             <button class="carousel-button prev" data-carousel-button = "prev">&#8656;</button>
             <button class="carousel-button next" data-carousel-button= "next">&#8658;</button>
           <ul data-slides>
@@ -86,10 +86,11 @@
         </div>
         </section>
         <section aria-label = "Why us?" >
-          <div id="services" class="container-light-header hidden mt-5">
-            <h1 class="display-4 mt-3" style= " font-family: 'Quicksand', sans-serif;   font-weight: 350;" >Mengapa Pilih Kami?</h1>
+         <div class="bg-light">
+          <div class="container-light-header hidden">
+            <h1 class="display-4 " style= " font-family: 'Quicksand', sans-serif; font-weight: 350;" >
+              Mengapa Pilih Kami?</h1>
           </div>
-
           <div class="text-center hidden">
             <div class="row">
               <div class="col-lg-4 col-md-12">
@@ -112,11 +113,12 @@
               </div>
             </div>
           </div>
+        </div> 
           </section>
 
           <section>
             <div class="container-gray">
-              <h2 class="display-4" ">Layanan Kami</h1>
+              <h2 id="services" class="display-4" ">Layanan Kami</h1>
                 <div class="container text-center">
                   <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-12 mt-4 hidden">
@@ -159,7 +161,7 @@
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
     <!-- jquery -->
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script async src="https://ga.jspm.io/npm:es-module-shims@1.5.5/dist/es-module-shims.js"></script>
   </script>
   <script type="importmap">
