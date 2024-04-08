@@ -44,18 +44,57 @@
             transform: translateX(0%);
         }
     }  
+    .jumbotron{
+        display: flex;
+        width: 100vw;
+        height: 60vh;
+        background-color: #007447;
+    }
+    .jumbotron>img{
+        width: 80vw;
+        height: 100vh;
+        padding-bottom: 2rem;
+   
+    }
+    .vector-container {
+        margin-top: 5rem;
+        padding-left: 3rem;
+        max-width: 40vw;
+        max-height: 40vh;
+    }
+    .curious{
+        max-width: 103.5vw;
+        border: none;
+    }
+    .curious button{
+        animation: SlideInFromLeft 1s forwards;
+        padding: 0.6rem 2.0rem;
+        margin-left: 15%;
+        margin-top: 2rem;
+        border: 10px transparent;
+        border-radius: 100px;
+        background-color:#ffffff15;
+        font-size: 1.2rem;
+        font-weight: 1000;
+        color: white;
+        cursor: pointer;
+        transition: all 0.15s ease-in;
+        position: relative; /* Ensure the container is positioned */
+        z-index: 1; /* Set a higher z-index */;
+      }
+      
     .navbar {
-        padding: 10px 0; /* Adjust padding top and bottom */
+        padding: 10px 0; 
         width: 100vw;
     }
     
     .navbar-brand {
-        margin-right: 20px; /* Add some right margin to the navbar brand */
+        margin-right: 20px; 
     }
-    body {
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-        overflow-x: hidden; /* Hide horizontal scrollbar if it appears */
+    html,body {
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden; 
     }
   
         .custom-bg-color {
@@ -98,7 +137,7 @@
         }
         .icon-wrapper {
         text-align: center;
-        padding: 20px;
+        padding: 10px;
     }
     .bg-light{
         width: 100vw;
@@ -116,6 +155,22 @@
         }
         .container p{
             font-family: 'Quicksand', sans-serif;
+            
+        }
+
+        .counter{
+            font-family: 'Quicksand', sans-serif;
+            margin-top: -2.5rem;
+            font-weight: 800;
+            margin-left: 62%;
+            background-color: #007447;
+            align-content: center;
+            padding-top:15px; /* 15px on firefox*/
+            border-radius: 999px;
+            color: #FFFFFF;
+            width: 70px;
+            height: 60px;
+            z-index: +1;
             
         }
        
@@ -163,9 +218,27 @@
             animation: fadeInRight 0.75s ease-in-out;
         }
 
-        @media screen and (max-width: 901px) {
-            .slide>img {display: none;}
+        @media screen and (max-width: 1023px) {
+             .jumbotron>img{
+                width: auto !important;
+                max-height: 70vh ;
+                margin-left: 20%;
+                margin-top: 1rem;
+                margin-right: auto;
+             }
+             .curious button{
+                align-items: center;
+                z-index: 2;
+             }
+             .vector-container{
+                display: none   ;
+             }
+             .counter{
+               margin-left: 60%;
+               z-index: +1;
+             }
         }
+
         @media screen and (max-width: 900px) {
             .slide-m[data-active]{
             opacity: 1;
@@ -212,9 +285,13 @@
 
 
 
-    card{
+    .card{
         justify-content: center;
 
+    }
+    .card > img {
+        max-height: 20rem;
+        width: auto;
     }
 
       #green {
@@ -231,4 +308,10 @@
     .desc p{
         color: black;
         font-family: 'Quicksand', sans-serif;
+    }
+    footer {
+        margin-top: auto; /* Pushes the footer to the bottom of the page */
+        position: absolute;
+        display: block;
+        width: 100vw;
     }

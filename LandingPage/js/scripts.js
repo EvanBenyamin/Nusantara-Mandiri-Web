@@ -32,20 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
       
 		if (entry.isIntersecting) {
 		  entry.target.classList.add('show');
-	 	} //else {  *USE ELSE IF TO GET A REACOURING ANIMATION
+	 	} //else {  
     //   entry.target.classList.remove('show');
     // }
 	  });
 	});
 
-	// Get all the elements with the .animate class applied
+	
 	const hiddenElements = document.querySelectorAll('.hidden');
 
-	// Add the observer to each of those elements
+
 	hiddenElements.forEach((el) => observer.observe(el));
 
 
-//Smooth scolll toDIv
+//Smooth scolll toDIv -> Jquery
 	$("#home").click(function() {
 		$('html, body').animate({
 			scrollTop: $("#jumbotron").offset().top
@@ -62,6 +62,40 @@ document.addEventListener("DOMContentLoaded", () => {
 		$('nav').toggleClass('scrolled',$(this).scrollTop()>50);
 	});
 
+
+	$("button").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#icons").offset().top
+		}, 2000);
+	});
+
+	const counters = document.querySelectorAll('.counter')
+	
+	counters.forEach(counter =>{
+		let initial_count = 0;
+		const final_count = counter.dataset.count;
+		console.log(final_count);
+		
+		const counting = setInterval(updateCounting,2);
+
+
+		function updateCounting(){
+			
+			if (initial_count >= 100){
+			initial_count += 20;
+			counter.innerText = initial_count + '+';
+			}
+			 if (initial_count < 100){
+				initial_count = initial_count+1;
+				counter.innerText = initial_count + '';				
+			 }
+			
+	
+			if(initial_count >= final_count){
+			clearInterval(counting)
+			}
+		}
+	});
 }); 
 
 
