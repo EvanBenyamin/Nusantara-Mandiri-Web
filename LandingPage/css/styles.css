@@ -96,7 +96,45 @@
         padding: 0; 
         overflow-x: hidden; 
     }
+    main aside{
+        position:fixed;
+        inset-block: 0;
+        inset-inline-end: 0;
+        z-index: +1;
+      }
+      
+      main aside .social-media{
+        height: 170%;
+        display: flex;
+        opacity: 75%;
+      }
+    main aside .social-media ul{ padding: 1.5rem 1rem;
+        padding: 1.5rem 1rem;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        margin: auto;
+        background-color: #00975d;
+        display: flex; flex-flow: column nowrap;
+        align-items: center;
+        gap: 1rem;
+      }
+      
+      main aside .social-media li {
+        list-style-type: none;
+      }
+      
+      main aside .social-media li a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: white;
+      
+        transition: all 0.1s ease-in-out;
+      }
   
+      main aside .social-media li a:hover {
+        color: #89B0D9;
+      }
+
         .custom-bg-color {
             background-color: #007447; 
         }  
